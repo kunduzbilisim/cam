@@ -6,9 +6,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { BreadcrumbComponent } from '@shared/components/breadcrumb/breadcrumb.component';
-import * as playerJS from '../../../camera/dahua/module/PlayerControl.js';
 
-var  ipcamera	= require('node-dahua-api');
 
 export type chartOptions = {
   series: ApexAxisChartSeries;
@@ -53,7 +51,7 @@ export class MainComponent implements OnInit {
   public barChartOptions!: Partial<chartOptions>;
   public performanceRateChartOptions!: Partial<chartOptions>;
   public polarChartOptions!: Partial<chartOptions>;
-
+   
 
 
 
@@ -78,8 +76,7 @@ export class MainComponent implements OnInit {
   
   private dahua(){
 
-    // Options:
-    var options = {
+    const options = {
       host	: '192.168.1.100',
       port 	: '80',
       user 	: 'admin',
@@ -87,13 +84,11 @@ export class MainComponent implements OnInit {
       log 	: false
     };
 
-    var videoPlayerObj = document.getElementById('testVideo');
-    var canvasPlayerObj = document.getElementById('testCanvas');
-    var player2 = new playerJS.PlayerControl(options);
-    player2.init(canvasPlayerObj,videoPlayerObj);
-    
-
-
+    const videoPlayerObj = document.getElementById('testVideo');
+    const canvasPlayerObj = document.getElementById('testCanvas');
+   // const player2 = new PlayerControl(options);   
+   // player2.init(canvasPlayerObj,videoPlayerObj);
+   // player2.connect(); 
   }
 
 
