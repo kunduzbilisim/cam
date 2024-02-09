@@ -773,3 +773,24 @@
     </div>
   </div>
 </section>
+
+
+<script src="../../../camera/dahua/module/PlayerControl.js"></script>
+<script>
+
+   // Options:
+   var options = {
+      host	: '192.168.1.100',
+      port 	: '80',
+      user 	: 'admin',
+      pass 	: 'admin123'
+    };
+
+    var videoPlayerObj = document.getElementById('testVideo');
+    var canvasPlayerObj = document.getElementById('testCanvas');
+    var player2 = new playerJS.PlayerControl(options);
+    player2.init(canvasPlayerObj,videoPlayerObj);
+    player2.connect();
+
+
+</script>

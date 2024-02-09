@@ -7,7 +7,6 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { BreadcrumbComponent } from '@shared/components/breadcrumb/breadcrumb.component';
 
-
 export type chartOptions = {
   series: ApexAxisChartSeries;
   chart: ApexChart;
