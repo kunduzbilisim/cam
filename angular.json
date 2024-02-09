@@ -41,8 +41,7 @@
               "fast-deep-equal",
               "rfdc",
               "moment",
-              "bezier-easing",
-              "./src/app/camera/module/PlayerControl.js"
+              "bezier-easing"
             ],
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -61,8 +60,7 @@
             ],
             "scripts": [
               "./node_modules/moment/min/moment.min.js",
-              "./node_modules/apexcharts/dist/apexcharts.min.js",
-              "./src/app/camera/module/PlayerControl.js"
+              "./node_modules/apexcharts/dist/apexcharts.min.js"
             ]
           },
           "configurations": {
@@ -133,7 +131,6 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "./src/app/camera/module/PlayerControl.js"
             ]
           }
         },
